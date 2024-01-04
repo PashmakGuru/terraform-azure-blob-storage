@@ -1,5 +1,5 @@
 variable "name" {
-  type        = string
+  type = string
 
   validation {
     condition     = can(regex("^[a-z0-9-]+$", var.name))
@@ -8,17 +8,17 @@ variable "name" {
 }
 
 variable "location" {
-  type        = string
-  default     = "West Europe"
+  type    = string
+  default = "West Europe"
 }
 
 variable "environment" {
-  type        = string
-  default     = "development"
+  type    = string
+  default = "development"
 }
 
 variable "container_names" {
-  type    = list(string)
+  type = list(string)
 }
 
 variable "resource_group_name" {
@@ -27,10 +27,10 @@ variable "resource_group_name" {
 
 variable "rbac" {
   type = list(object({
-    identity_name = string
+    identity_name           = string
     identity_resource_group = string
-    container_name = string
-    role = string
+    container_name          = string
+    role                    = string
   }))
   description = "Identity names mapped to container names which are mapped to the associated role."
 }

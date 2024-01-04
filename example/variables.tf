@@ -19,6 +19,6 @@ variable "azure_tenant_id" {
 }
 
 variable "location" {
-  type = string
+  type    = string
   default = "West US"
 }
