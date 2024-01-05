@@ -5,6 +5,10 @@
 ## Overview
 This Terraform configuration is designed to facilitate the deployment and management of Azure Blob Storage resources. It offers an efficient way to create and manage storage accounts and containers in Azure.
 
+```mermaid
+%%tfmermaid
+```
+
 ## Features
 - **Resource Group Creation**: Sets up an Azure resource group.
 - **Storage Account Management**: Automates the creation of Azure Storage Accounts.
