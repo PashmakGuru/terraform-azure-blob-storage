@@ -33,7 +33,7 @@ jobs:
 
   format:
     runs-on: ubuntu-22.04
-    name: Formate Terraform
+    name: Format Terraform
     permissions:
       contents: write
       pull-requests: write
@@ -60,7 +60,7 @@ jobs:
 
   tfmermaid:
     runs-on: ubuntu-22.04
-    name: Terraform Graph
+    name: Update Terraform Diagram
     permissions:
       contents: write
       pull-requests: write
